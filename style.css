@@ -109,26 +109,29 @@ a{
 
 /* .............................searvic -section start.................  */
 .searvic-section{
-    width: 100%;
     /* background-color: #e84545; */
+    padding-top: 120px;
+    padding-bottom: 124px;
 }
 .searvic-section .continer{
     background-color: #fff;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 120px;
-    padding-bottom: 124px;
+    /* padding-top: 120px;
+    padding-bottom: 124px; */
     row-gap: 76px;
     column-gap: 5%;
 }
-.searvic-section .continer .img{
-    max-width:30%;
-    text-align: center;
+.searvic-section .continer .servic-item{
+    width:30%;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
-.searvic-section .continer .img h2{
+.searvic-section .continer .servic-item img{
+   width: 100%;
+}
+.searvic-section .continer .servic-item h2{
     margin-top: 36px;
     margin-bottom: 28px;
     font-size: 14px;
@@ -137,7 +140,7 @@ a{
     text-transform: uppercase;
     color: #2d3033;
 }
-.searvic-section .continer .img p{
+.searvic-section .continer .servic-item p{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
@@ -146,6 +149,7 @@ a{
 
 /* ..............................searvic-srction start...............  */
 
+/* .........................full-img-section..........................  */
 .img-section{
     display: flex;
     flex-wrap: wrap;
@@ -204,14 +208,7 @@ a{
 .img-section .full-section:hover .hover-writing{
     visibility: visible;
 }
-
-
-
-
-
-
-
-/* ........................................................  */
+/* ......................................full-img-section end..................  */
 
 
 /* ................................manimg section start.......................  */
@@ -221,15 +218,16 @@ a{
     /* background-color: #e84545; */
 }
 .manimg-section .continer{
-    height: 100%;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
+    column-gap: 10px;
 }
 .manimg-section .continer .img{
     width: 25%;
-    /* display: flex; */
+}
+.manimg-section .continer .img img{
+    width: 100%;
 }
 
 .manimg-section .continer h2{
@@ -428,9 +426,6 @@ a{
     text-align: center;
 }
 
-
-
-
 /* .......................cute girl section end..................  */
 
 /* ..........................lestpara staet.....................  */
@@ -457,7 +452,14 @@ a{
 
 
 
-/* .........................responsive...........................  */
+/* .........................responsive heading-section and bannar-section start...........................  */
+@media screen and (max-width: 1150px){
+    .manimg-section .continer .img{
+        width: 33%;
+    }
+}
+
+
 
 @media screen and (max-width: 900px){
     .header-manu{
@@ -466,7 +468,26 @@ a{
     .heading .continer .manu-bar{
         display: inline-block;
     }
+
+    /* .....................fill-img-section...............  */
+    .img-section .full-section{
+        max-width: calc(33% - 1px);
+       
+     }
+
+     /* ..................searvic-section.................  */
+    
+    .searvic-section .continer .servic-item p{
+      
+        padding: 0 16px;
+    }
+
+     /* ...............main-img-section...................  */
+
+
  }
+
+
 
  @media screen and (max-width: 860px){
     .banner .continer h1{
@@ -482,6 +503,30 @@ a{
         margin-bottom: 60px;
     }
  }
+
+
+
+
+ @media screen and (max-width: 800px){
+    .searvic-section .continer .servic-item img{
+        width: 90%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
+    }
+    /* ...........full-img section..............  */
+    .img-section .full-section{
+        max-width: calc(50% - 1px);
+       
+     }
+ }
+
+
+
+
+
+
+
  @media screen and (max-width: 785px){
     .banner .continer h1{
         font-size: 40px;
@@ -492,7 +537,26 @@ a{
         line-height: 20px;
         margin-bottom: 50px;
     }
+
+    /* ................searvic-section.............  */
+    .searvic-section .continer .servic-item img{
+        width: 80%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
+    }
+
+    /* ..................full-img-section...................  */
+    .img-section .full-section{
+        max-width: calc(50% - 1px);
+       
+     }
+     
  }
+
+
+
+
  @media screen and (max-width: 660px){
     .banner .continer{
         padding-top: 170px;
@@ -513,7 +577,18 @@ a{
     .banner .continer a{
         padding: 15px 30px;
  }
+ /* ...............searvic-section,,,,,,,,,,,,,  */
+ .searvic-section .continer .servic-item img{
+    width: 70%;
+ }
+ .searvic-section{
+    padding-top: 100px;
+    padding-bottom: 98px;
+}
 } 
+
+
+
 @media screen and (max-width: 560px){
     .banner .continer h1{
         font-size: 30px;
@@ -533,7 +608,50 @@ a{
         padding-top: 30px;
         padding-bottom: 30px;
     }
+/* .................. .searvic-section.........  */
+
+  
+   
+    
 }
+
+
+
+@media screen and (max-width: 480px) {
+    .searvic-section .continer .servic-item{
+        width:100%;
+      
+    }
+    .searvic-section .continer .servic-item img{
+       width: 65%;
+    }
+    .searvic-section .continer .servic-item h2{
+        margin-top: 35px;
+        margin-bottom: 25px;
+      
+    }
+    .searvic-section{
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    .searvic-section .continer .servic-item p{
+       
+        padding: 0 15px;
+    }
+    /* ................searvic-section......  */
+    .searvic-section .continer .servic-item{
+        width:100%;
+      
+    }
+    /* ..........full-img-section.......  */
+    .img-section .full-section{
+        max-width: calc(100% - 1px);
+       
+     }
+}
+
+
+
 @media screen and (max-width: 380px){
     .banner .continer h1{
         font-size: 25px;
@@ -556,7 +674,39 @@ a{
     .banner .continer a{
         padding: 15px 25px;
  }
+ /* ...............searvic-section ...............  */
+ .searvic-section .continer .servic-item{
+    width:100%;
+  
 }
+.searvic-section .continer .servic-item img{
+   width: 50%;
+}
+.searvic-section .continer .servic-item h2{
+    margin-top: 24px;
+    margin-bottom: 18px;
+  
+}
+.searvic-section{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.searvic-section .continer .servic-item p{
+   
+    padding: 0;
+}
+
+  /* ....................full-img-section..................  */
+
+ .img-section .full-section{
+    max-width: calc(100% - 1px);
+   
+ }
+
+}
+
+
+
 @media screen and (max-width: 380px){
     .banner .continer h1{
         padding: 0 20px;
@@ -580,3 +730,23 @@ a{
     padding-bottom: 60px;
 }
 }
+
+
+
+
+/* .................responsive heading-section and banner-section end....................  */
+
+/* ..........................responsive .searvic-section start.....................  */
+
+
+
+
+
+
+
+
+
+
+/* ..............................responsive .searvic-section end...........................  */
+
+
