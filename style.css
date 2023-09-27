@@ -17,7 +17,8 @@ a{
     display: inline-block;
 }
 .continer{
-    width: 1200px;
+
+    max-width: 1200px;  
     padding: 0 15px;
     margin: 0 auto;
 
@@ -37,6 +38,14 @@ a{
     padding-bottom: 50px;
     border-bottom: 1px solid rgba(253, 252, 252 ,0.2);
 
+}
+.heading .continer .header-logo img{
+    width: 100%;
+}
+.heading .continer .manu-bar{
+    display: none;
+    font-size: 30px;
+    color: #fff;
 }
 .heading .continer .header-manu ul{
     display: flex;
@@ -216,6 +225,7 @@ a{
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 .manimg-section .continer .img{
     width: 25%;
@@ -276,18 +286,20 @@ a{
     color: #fff;
 }
 .cutegirl-section .control .img{
-    width: 60%;
+    width: 30%;
+ 
 }
-.cutegirl-section .control .img img{
+.cutegirl-section .control .imgdiv img{
     height: 100%;
-    width: 100%;
-
+    max-width: 100%;
 }
 .cutegirl-section .control .writing{ 
+   width: 70%;
    background-color: #53354a;
-   padding-top: 117px;
-   padding-left: 90px;
-   padding-right: 150px;
+   padding-top: 80px;
+   padding-left: 80px;
+   /* padding-right: 150px; */
+  
 }
 .cutegirl-section .control .writing p{
     font-size: 13px;
@@ -298,7 +310,7 @@ a{
 
 .dot{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 50%;
     
 }
@@ -398,7 +410,8 @@ a{
     padding-left: 50px;
 }
 .location-section .full-section .location3 p{
-    padding-right: 350px;
+    text-align: left;
+    padding-right: 150px;
     
 }
 .location-section .full-section .location3 h2{
@@ -412,8 +425,9 @@ a{
     
 }
 .font-awesomeimg{
-    margin-left: 270px;
+    text-align: center;
 }
+
 
 
 
@@ -440,3 +454,129 @@ a{
 
 
 /* ........................ lest para end..................  */
+
+
+
+/* .........................responsive...........................  */
+
+@media screen and (max-width: 900px){
+    .header-manu{
+        display: none;
+    }
+    .heading .continer .manu-bar{
+        display: inline-block;
+    }
+ }
+
+ @media screen and (max-width: 860px){
+    .banner .continer h1{
+        font-size: 50px;
+        padding: 0 90px;
+        line-height: 55px;
+    }
+    .banner .continer p{
+       
+        font-size: 22px;
+        padding: 0 115px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+ }
+ @media screen and (max-width: 785px){
+    .banner .continer h1{
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .banner .continer p{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+ }
+ @media screen and (max-width: 660px){
+    .banner .continer{
+        padding-top: 170px;
+        padding-bottom: 80px;
+    }
+      
+    .banner .continer h1{
+        font-size: 40px;
+        padding: 0 70px;
+        line-height: 42px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 80px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+    .banner .continer a{
+        padding: 15px 30px;
+ }
+} 
+@media screen and (max-width: 560px){
+    .banner .continer h1{
+        font-size: 30px;
+        padding: 0 70px;
+        line-height: 35px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 60px;
+        line-height: 16px;
+        margin-bottom: 45px;
+    }
+    .heading .continer .header-logo img{
+        width: 80%;
+    }
+    .heading .continer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 380px){
+    .banner .continer h1{
+        font-size: 25px;
+        padding: 0 40px;
+        line-height: 27px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 40px;
+        line-height: 16px;
+        margin-bottom: 35px;
+    }
+    .heading .continer .header-logo img{
+        width: 70%;
+    }
+    .heading .continer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .banner .continer a{
+        padding: 15px 25px;
+ }
+}
+@media screen and (max-width: 380px){
+    .banner .continer h1{
+        padding: 0 20px;
+    }
+    .banner .continer p{
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .heading .continer .header-logo img{
+        width: 60%;
+    }
+    .heading .continer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .banner .continer a{
+        padding: 15px 20px;
+ }
+ .banner .continer{
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+}
