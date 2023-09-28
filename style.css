@@ -159,7 +159,7 @@ a{
 }
 .img-section .full-section{
    max-width: calc(25% - 1px);
-   max-height: 330px;
+   /* max-height: 330px; */
    cursor: pointer;
    position: relative;
    
@@ -220,11 +220,12 @@ a{
 .manimg-section .continer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 60px;
-    column-gap: 10px;
+
 }
 .manimg-section .continer .img{
-    width: 25%;
+    width: 23%;
 }
 .manimg-section .continer .img img{
     width: 100%;
@@ -273,6 +274,7 @@ a{
 
 .cutegirl-section .control{
     display: flex;
+    /* flex-wrap: wrap; */
 
 }
 .cutegirl-section .writing h2{
@@ -284,15 +286,15 @@ a{
     color: #fff;
 }
 .cutegirl-section .control .img{
-    width: 30%;
+    width: 50%;
  
 }
 .cutegirl-section .control .imgdiv img{
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 .cutegirl-section .control .writing{ 
-   width: 70%;
+   width: 50%;
    background-color: #53354a;
    padding-top: 80px;
    padding-left: 80px;
@@ -453,11 +455,7 @@ a{
 
 
 /* .........................responsive heading-section and bannar-section start...........................  */
-@media screen and (max-width: 1150px){
-    .manimg-section .continer .img{
-        width: 33%;
-    }
-}
+
 
 
 
@@ -471,7 +469,7 @@ a{
 
     /* .....................fill-img-section...............  */
     .img-section .full-section{
-        max-width: calc(33% - 1px);
+        max-width: calc(50% - 1px);
        
      }
 
@@ -483,8 +481,9 @@ a{
     }
 
      /* ...............main-img-section...................  */
-
-
+     .manimg-section .continer .img{
+        width: 48%;
+    }
  }
 
 
@@ -501,6 +500,10 @@ a{
         padding: 0 115px;
         line-height: 24px;
         margin-bottom: 60px;
+    }
+    /* .............manimg section...............  */
+    .manimg-section .continer .img{
+        width: 48%;
     }
  }
 
@@ -520,7 +523,6 @@ a{
        
      }
  }
-
 
 
 
@@ -607,12 +609,7 @@ a{
     .heading .continer{
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-/* .................. .searvic-section.........  */
-
-  
-   
-    
+    }  
 }
 
 
@@ -643,13 +640,54 @@ a{
         width:100%;
       
     }
+    .searvic-section .continer{
+        row-gap: 65px;
+       
+    }
+    
     /* ..........full-img-section.......  */
     .img-section .full-section{
         max-width: calc(100% - 1px);
        
      }
-}
+     /* .............man-img-section........  */
 
+
+     .manimg-section .continer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    
+    }
+    .manimg-section .continer .img{
+        width: 100%;
+    }
+    .manimg-section .continer .img img{
+        width: 100%;
+    }
+    
+    .manimg-section .continer h2{
+       
+        font-size: 22px;
+       
+        margin-top: 30px;
+    }
+    .manimg-section .continer h3{
+        margin-bottom: 20px; 
+    }
+    .manimg-section .continer p{
+        padding-right: 0;
+    }
+    .manimg-section .continer .font-awesome{
+        margin-top: 33px;
+        margin-bottom: 50px;
+       
+    }
+
+
+
+}
 
 
 @media screen and (max-width: 380px){
@@ -695,6 +733,10 @@ a{
    
     padding: 0;
 }
+.searvic-section .continer{
+    row-gap: 60px;
+   
+}
 
   /* ....................full-img-section..................  */
 
@@ -704,7 +746,6 @@ a{
  }
 
 }
-
 
 
 @media screen and (max-width: 380px){
@@ -733,20 +774,5 @@ a{
 
 
 
-
-/* .................responsive heading-section and banner-section end....................  */
-
-/* ..........................responsive .searvic-section start.....................  */
-
-
-
-
-
-
-
-
-
-
-/* ..............................responsive .searvic-section end...........................  */
 
 
